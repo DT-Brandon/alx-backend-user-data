@@ -3,6 +3,7 @@
 Filter personal information using a Regex.
 """
 
+
 import re
 from typing import List
 import logging
@@ -45,8 +46,8 @@ def filter_datum(fields: List[str],
                          redaction + separator, message)
     return message
 
-PII_FIELDS = ('name', 'email', 'password', 'ssn', 'phone')
 
+PII_FIELDS = ('name', 'email', 'password', 'ssn', 'phone')
 
 
 def get_logger() -> logging.Logger:
@@ -80,6 +81,7 @@ def get_db() -> mysql.connector.connection.MySQLConnection:
         database=os.getenv('PERSONAL_DATA_DB_NAME')
     )
     return db_connect
+
 
 def main() -> None:
     """

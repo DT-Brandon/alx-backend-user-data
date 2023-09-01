@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Implement a hash_password and is_valid function. hash_password expects one string argument
+Implement a hash_password and is_valid function.
+hash_password expects one string argument
 name password and returns a salted, hashed password, which is a byte string.
 """
 
